@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/background);
+    background-size: cover;
+    height:100px;
+    background-position: center;
+
+}
+.login-page,.signup-page{
+    width: 360px;
+    padding:10%;
+    margin:auto;
+}
+.form{
+    position:relative;
+    z-index: 1;
+    background: #ffffff;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    
+}
+
+.form-signup{
+    position:relative;
+    z-index: 1;
+    background: #ffffff;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    /* display:none; */
+}
+
+.form input, .form-signup input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #001920;
+    color: #c5c8c8;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.toggle-input{
+    display:flex;
+}
+
+ #toggler{
+    margin-left: -20px; 
+    margin-top: 15px;  
+    margin-right: 5px; 
+    cursor:pointer;
+    color:#fff 
+}
+.form button, .form-signup button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #2ecb72;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color:#ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.message a {
+    text-decoration: none;
+}
