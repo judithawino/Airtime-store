@@ -14,7 +14,27 @@
         }
 
     });
+    document.addEventListener('DOMContentLoaded', (e)=>{
+        console.log(e)
+    let signup=document.getElementsByClassName('signup-link');
+    let login=document.getElementById('loginLink');
+    let signupForm=document.getElementsByClassName('form-signup');
+    let loginForm=document.getElementsByClassName('form');
 
+    signup[0].addEventListener('click', (e)=>{
+        e.preventDefault();
+        loginForm[0].classList.add('form--hidden');
+        signupForm[0].classList.remove('form--hidden'); 
+
+    })
+
+    login.addEventListener('click', (e)=>{
+        e.preventDefault();
+        loginForm[0].classList.remove('form--hidden');
+        signupForm[0].classList.add('form--hidden'); 
+
+    })
+})
     
 
 
