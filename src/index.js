@@ -36,7 +36,8 @@
     })
 
     let landing=document.getElementById('login');
-    landing.addEventListener('click', ()=>{
+    landing.addEventListener('click', (e)=>{
+        e.preventDefault();
         window.location.href="home.html";
     })
 })
