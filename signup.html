@@ -7,16 +7,17 @@
     </head>
     <body>
         <div class="login-page">
-            <div class="form">
-                <form class="login-form">
+            <div class="form form--hidden">
+                <form class="login-form ">
+                    <h1>Log In</h1>
                     <input type="email" placeholder="email" id="email" class="form-control" name="Email" required=true/>
                     
                     <div class="toggle-input">
                         <input type="password" placeholder="password" id="password" class="form-control" name="Password" required=true/>
                         <i id="toggler" class="far fa-eye"></i>
                     </div>
-                    <button class="btn btn-primary" type="submit">Log In</button>
-                    <p class="message">Not registered? <a href="#signup">Sign up</a> </p>
+                    <button class="btn btn-primary" id="login" type="submit">Log In</button>
+                    <p class="message">Not registered? <a href="#" class="signup-link">Sign up</a> </p>
                 </form>
             </div>
         </div>
@@ -25,37 +26,17 @@
         <div class="signup-page">
             <div class="form-signup">
                 <form class="signup-form">
+                    <h1>Sign Up</h1>
                     <input type="text" placeholder="firstname"  class="form-control" name="FirstName" required=true/>
                     <input type="text" placeholder="lastname"  class="form-control" name="LastName" required=true/>
                     <input type="email" placeholder="email"  class="form-control" name="Email" required=true/>
                     <input type="password" placeholder="password"  class="form-control" name="Password" required=true/>          
                     <input type="password" placeholder="confirm password"  class="form-control" name="Confirm password" required=true/>  
                     <button class="btn btn-primary" type="submit">Registar</button>
-                    <a name="signup"></a>
+                    <p>Already have an account? <a href="#" class="formLink" id="loginLink">Log in</a> </p>                   
                 </form>
             </div>
-        </div>
-        
-        <!-- <div id="main">
-            <div id="header">
-                <header class="men-bar">
-                    <img src="assets/logo.jpg" alt="Company Logo" name="name">
-                    <h1 id="title">
-                        <span>Heada Airtime Store</span>
-                    </h1>
-                        <div id="options">
-                            <button id="user-profile">Profile</button>
-
-                            <div class="profile content">
-                                <p>username</p>
-                                <p>Email</p>
-                                <P>Balance:</P>
-                                <p>Log Out</p>
-                            </div>                            
-                        </div>                    
-                </header>
-            </div>
-        </div> -->
+        </div>       
         <script type="text/javascript" src="src/index.js"></script>
     </body>
 </html>

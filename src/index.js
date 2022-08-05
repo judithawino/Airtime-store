@@ -34,6 +34,11 @@
         signupForm[0].classList.add('form--hidden'); 
 
     })
+
+    let landing=document.getElementById('login');
+    landing.addEventListener('click', ()=>{
+        window.location.href="home.html";
+    })
 })
     
 

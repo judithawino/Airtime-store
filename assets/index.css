@@ -1,13 +1,14 @@
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/background);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
     background-size: cover;
     height:100px;
     background-position: center;
+    /* , url(../images/background) */
 
 }
 .login-page,.signup-page{
     width: 360px;
-    padding:10%;
+    padding:10px;
     margin:auto;
 }
 .form{
@@ -30,6 +31,9 @@ body{
     padding: 45px;
     text-align: center;
     /* display:none; */
+}
+.form--hidden{
+    display:none;
 }
 
 .form input, .form-signup input{
@@ -69,6 +73,6 @@ body{
 }
 
 
-.message a {
+a {
     text-decoration: none;
 }
